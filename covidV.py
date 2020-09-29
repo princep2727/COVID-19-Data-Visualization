@@ -26,12 +26,12 @@ print(Df)
 
 
 #Global spread of covid19
-fig = px.choropleth(Df, locations = "Country", locationmode = "country names", color="Confirmed", animation_frame="Date")
+fig = px.choropleth(df, locations = "Country", locationmode = "country names", color="Confirmed", animation_frame="Date")
 fig.update_layout(title_text = "Global Spread of Covid-19")
 fig.show()
 
 #Global deaths of covid19
-fig = px.choropleth(Df, locations = "Country", locationmode = "country names", color="Deaths", animation_frame="Date")
+fig = px.choropleth(df, locations = "Country", locationmode = "country names", color="Deaths", animation_frame="Date")
 fig.update_layout(title_text = "Global Deaths of Covid-19")
 fig.show()
 
